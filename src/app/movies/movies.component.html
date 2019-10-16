@@ -1,0 +1,8 @@
+
+<!-- <h1>Home Component</h1> -->
+<div class="container col-md-8 offset-2 card card-body" *ngFor="let movie of moviess">
+    <img src="{{movie.urlToImage}}" alt="">
+    <h1>{{movie.title}}</h1>
+    </div>
+    <label for="">Search</label><br>
+    <input type="search" name="search" id="search" placeholder="search by movie name">search
