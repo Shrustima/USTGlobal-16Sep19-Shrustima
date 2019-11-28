@@ -1,0 +1,55 @@
+h1
+{
+    text-align: center
+}
+h3{
+    text-align: center
+}
+input[type='search']{ 
+    margin: 20px,0px,0px,100px;
+    width:500px; 
+   height: 39px;
+   border: 1px solid black;
+   border-radius: 40px;
+   margin: 21px 10000px 0px 400px;
+}
+input[type="search"]:focus{
+    outline:none;}
+form{
+        background-image: url(/Image/img6.jpg);
+        background-size: cover;
+        color: white;
+        height: 550px;
+         width: 1320px;
+    }
+   /* img{
+        height: 300px;
+        width: 350px;
+        
+        cursor: pointer;
+    }  */
+    
+    img{
+        width: 250px;
+        height: 300px;
+        border: 1px solid black;
+        padding: 12px;
+        border-radius: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+        box-shadow: 7px 10px 15px orangered;
+        transition: all 1s;
+    
+    }
+    img:hover{
+        transform: scale(1.1, 1.2);
+    }
+
+    a{
+        color: #fff;
+        margin-right: 22px;
+        padding: 0 2px 10px;
+        text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    }
