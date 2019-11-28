@@ -1,0 +1,4 @@
+10,Shrusti,500000,F
+11,Shraddha,10000,F
+12,Arshad,20000,M
+13,Abhijeet,30000,M

@@ -1,0 +1,4 @@
+1,Diksha,20000,F
+2,Kavya,10000,F
+3,Aabhay,20000,M
+18,Soumya,30000,M
