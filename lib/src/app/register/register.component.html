@@ -1,0 +1,54 @@
+<div class="alert alert-danger" *ngIf='error'>{{error}}</div>
+<div class="col-md-4 offset-md-4 mt-5 card">
+    <div class="card-header">
+        <div class="card-title">
+            <h4>Register</h4>
+        </div>
+    </div>
+    <div class="card-body">
+        <form #registerForm='ngForm' (ngSubmit)='register(registerForm)'>
+            <input type="number" name="id" id="id" #id='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter Id...">
+            <div *ngIf="id.invalid && id.touched">
+                <p *ngIf="id.errors.required" class="text-danger">*This field is mandatory
+                    <p *ngIf="id.errors.minlength" class="text-danger">*This field accepts minimum
+                        3 characters
+            </div>
+
+            <input type="text" name="name" id="name" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter Name...">
+            <div *ngIf="name.invalid && name.touched">
+                <p *ngIf="name.errors.required" class="text-danger">*This field is mandatory
+                    <p *ngIf="name.errors.minlength" class="text-danger">*This field accepts minimum
+                        3 characters
+            </div>
+
+            <input type="email" name="email" id="email" #email='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter Email...">
+            <div *ngIf="email.invalid && email.touched">
+                <p *ngIf="email.errors.required" class="text-danger">*This field is mandatory
+                    <p *ngIf="email.errors.minlength" class="text-danger">*This field accepts minimum
+                        3 characters
+            </div>
+
+
+            <input type="password" name="password" id="password" #password='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter password...">
+            <div *ngIf="password.invalid && password.touched">
+                <p *ngIf="password.errors.required" class="text-danger">*This field is mandatory
+                    <p *ngIf="password.errors.minlength" class="text-danger">*This field accepts minimum
+                        3 characters
+            </div>
+
+            <input type="text" name="type" id="type" #type='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter Type..">
+            <div *ngIf="type.invalid && type.touched">
+                <p *ngIf="type.errors.required" class="text-danger">*This field is mandatory
+                    <p *ngIf="type.errors.minlength" class="text-danger">*This field accepts minimum
+                        3 characters
+            </div>
+
+            <button type="submit" class="float-right btn btn-dark" [disabled]="registerForm.invalid">Register</button>
+        </form>
+    </div>
+</div>
