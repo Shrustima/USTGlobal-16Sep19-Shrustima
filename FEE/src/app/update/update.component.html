@@ -1,0 +1,29 @@
+<div class="alert alert-danger" *ngIf="error">{{error}}</div>
+<div class="col-md-4 offset-md-4 mt-5">
+  <div class="card">
+    <div class="card-header bg-dark text-white">
+      <div class="card-title">
+        <h4>Update Product</h4>
+      </div>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="updateProduct" (ngSubmit)="update()">
+        <input type="number" name="id" id="id" formControlName="id" class="form-control mb-3"
+          placeholder="Enter Product ID">
+        <input type="text" name="name" id="name" formControlName="name" class="form-control mb-3"
+          placeholder="Enter Product Name">
+        <input type="text" name="category" id="category" formControlName="category" class="form-control mb-3"
+          placeholder="Enter Product Category">
+        <input type="text" name="company" id="company" formControlName="company" class="form-control mb-3"
+          placeholder="Enter Product Brand">
+        <input type="text" name="quantity" id="quantity" formControlName="quantity" class="form-control mb-3"
+          placeholder="Enter Product Quantity">
+        <input type="text" name="price" id="price" formControlName="price" class="form-control mb-3"
+          placeholder="Enter Product Cost">
+        <div class="card-footer">
+          <button class="float-right btn btn-dark" type="submit">Update Product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

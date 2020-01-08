@@ -1,0 +1,35 @@
+<div class="main">
+  <div class="input-group">
+    <input [(ngModel)]='search' name="search" id="search" type="text" class="form-control"
+      placeholder="Search product by category">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="button" (click)="searchByCategory(search)">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div *ngIf='products !== null'>
+  <table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Company</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let myProduct of products">
+        <td>{{myProduct.id}}</td>
+        <td>{{myProduct.name}}</td>
+        <td>{{myProduct.company}}</td>
+        <td>{{myProduct.category}}</td>
+        <td>{{myProduct.quantity}}</td>
+        <td>{{myProduct.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
